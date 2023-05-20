@@ -1,0 +1,440 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+    --background: #D9D9D9;  /*Ajout couleur*/
+}
+
+body {  
+    
+    display: flex;
+    justify-content: center;
+    }
+
+h1 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 5px; /*marge entre h1 et P*/
+     }
+
+h2 {
+        font-size: 22px; 
+        line-height: 26px;
+       }
+
+p {
+        margin-bottom: 30px; /*marge entre P et rechercher*/
+         }
+    
+
+/****** Header nav .Main-container .logo ***********/
+
+header {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+#menu-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+   
+.logo {
+    width: 61.09px;
+    margin: 10px;
+    margin-top: 30px;
+margin-bottom: 20px;
+margin-left: 0px;
+margin-right: 5px;
+}   
+
+    
+a {
+        text-decoration: none;
+        color: black;
+    }
+
+#menu-nav a {
+    padding: 30px;  /* Définit la marge exterieure*/
+}
+
+#menu-nav a:hover {    /* Définit la bordure bleue qui s’affiche au survol */
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+    padding-top: 28px;
+}
+
+.bold-filters {
+        font-weight: bold;
+         font-size: 17px;
+         line-height: 20px;
+         text-align: center;
+         vertical-align: top;
+       }
+
+       
+/****** Bouton rechercher**********/
+
+
+.input-search {
+    display: flex;
+    border: 1px solid var(--font-color);
+    display: flex;
+    width: 418px;
+  } 
+                     
+  #search-icon {
+    position: relative;
+    width: 50px;
+    height: 49px;
+    left: 0;
+    top: 0;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  
+.input-search input {
+    font:  700 18px "Raleway", sans-serif;
+    border: 1px solid #F2F2F2; /* Ajout de la bordure */
+    outline: none;
+    width: 190px;
+    border: none;
+    padding-left: 17px;
+  }
+ 
+.search-button {
+    height: 50px;     /****** sur la maquette : 21 100**********/
+    width: 130px;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    background: #0065FC;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    }
+
+    .bold-text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    vertical-align: top;
+    }
+
+    .input-search input.bold-text {
+        border: 1px solid #F2F2F2;
+      }
+      
+      
+/************************************ Filtres*********************************/
+    
+.filter-container:hover {
+    background-color: #DEEBFF;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border: 2px solid #F2F2F2; /* Ajout de la bordure */
+    border-radius: 20px; /* Ajout d'un arrondi pour la bordure */
+}
+
+.all-filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px /* espace horizontal entre les filtres */
+}
+
+.all-filters {
+    margin-top: 20px; /* marge entre recherche et filtres */
+}
+
+.filter-name {
+    font-weight: bold;
+}
+
+ .fa-solid {
+color: var(--main-color);     /****** ? ****/
+    }                  
+                      
+
+.fa-info {
+    color: blue;
+}
+
+.fa-money-bill-wave {
+color: #0080ff;
+}
+
+.fa-heart {
+    color: #0080ff;
+    }
+    
+.fa-person {
+        color: #0080ff;
+        }
+    
+.fa-fire {
+        color: #0080ff;
+        }
+
+/**************** Informations ************************/
+#informations {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-top: 20px;
+  }
+
+  
+  .fa-info {
+    margin-right: 10px;
+    color: #0065fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: solid 1px #F2F2F2;
+    border-radius: 100px;
+    padding: 3px 6px 3px 6px;
+    font-size: 10px;
+  }
+  
+  .info-text {
+    margin: 0;
+    font-size: 16px;
+}                
+                  
+                   
+/****** Hebergements Marseille ***********/
+
+.card {
+     background-color: white;
+     border-radius: 20px;
+     padding: 5px;
+     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+      }         
+
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutralStar {
+    color: var(--main-bg-color)
+}
+
+/****** Hebergements And Populaires ***********/
+
+.hebergements-and-populaires {    /****** emplacement "Les plus populaires" ***********/
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {     /****** style "Les plus populaires" ***********/
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+}
+
+
+ /* -------------- SECTION FOOTER --------------*/
+
+footer {
+    
+    margin: 0;    /* --supprime les marges par défaut de l'élément footer --*/
+    background-color: #F2F2F2;
+    display: flex;   /* --alignement horizontal --*/
+    justify-content: space-evenly; /* --espace les enfants section de l'élément footer en ajoutant un espace égal entre eux.--*/
+    width: 100%;  /* --définit la largeur--*/
+    margin-left: 0;  /* --supprime la marge gauche--*/
+    padding-top: 30px; /* --ajoute un rembourrage en haut du footer --*/
+    padding-bottom: 20px; /* --ajoute un rembourrage en bas du footer --*/
+    }
+
+footer section {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 7.5%; /* --ajoute une marge à droite des sections du footer --*/
+        margin-top: -20px; /* --ajoute une marge au-dessus des sections du footer --*/
+    }
+footer section h4 {
+        font-size: 18px;
+        font-family: 'Raleway-Bold', sans-serif;
+        
+    }
+footer section ul {
+        margin-left: -40px;
+        margin-top: -5px;
+        list-style-type: none;
+    }
+footer section ul li {
+        margin-bottom: 10px;
+    
+    }
+ footer section ul li a {
+        display: block;
+        color: black;
+    }
+     
+footer {
+      margin-top: auto;
+    }
+
+
+    
+   
+      
+    
+    
+  
+
+
+    
+      
+  
+    
+    
+      
+    
+    
+   
+    
+      
